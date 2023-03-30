@@ -1,0 +1,60 @@
+.container{
+    display: grid;
+    grid-template-columns: 60% 40% 60%;
+    width: 70%;
+    height: 500px;
+    background-color: white;
+    padding: 0px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid black;
+    overflow:hidden;
+    transition: 0.3s linear;
+}
+
+.container.active{
+    grid-template-columns: 0% 40% 60%;
+    transition: 0.3s linear;
+}
+
+.container .side-div{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: url(https://i.pinimg.com/originals/86/e2/24/86e2243b4af2abd033f12b5a561e36d6.jpg);
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.container .side-div button{
+    padding:15px 25px;
+    background-color: rgba(3, 142, 10, 0.826);
+    color:white;
+    margin-bottom: 120px;
+    margin-right: 200px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.2s linear;
+    border: none;
+    border-radius: 30px;
+}
+
+.container .side-div button:hover{
+    background-color:  rgb(222, 138, 2);
+}
+
+h2{
+    font-size: 30px;
+    font-weight: bold;
+    /* margin-bottom: 100px; */
+}
+
+.up{
+    margin-bottom: 100px;
+}
