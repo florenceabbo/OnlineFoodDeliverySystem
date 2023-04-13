@@ -1,0 +1,16 @@
+.btns {
+  padding: 10px;
+  border-radius: 5px;
+  background:orange;
+  color: #fff;
+  font-size: 1rem;
+  margin-top: 40px;
+  
+}
+.btns:hover {
+  color:white;
+  background: rgb(13, 13, 13);
+}
+.slider-wrapper{
+  margin-top: 30%;
+}
