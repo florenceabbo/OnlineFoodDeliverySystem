@@ -5,6 +5,8 @@ import Contact from "./pages/Contact";
 import Menu from "./pages/Menu";
 import Pagenotfound from "./pages/Pagenotfound";
 import Login from "./pages/login/Login";
+import MenuDetails from "./pages/menudetails/MenuDetails";
+import Lunch from "./pages/lunch/Lunch";
 
 
 import './App.css'
@@ -16,6 +18,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/lunch" element={<Lunch/>} />
+          <Route path="/menudetails/:id" element={<MenuDetails/>} />
+          
+
           <Route path="/contact" element={<Contact />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/login" element={<Login/>} />

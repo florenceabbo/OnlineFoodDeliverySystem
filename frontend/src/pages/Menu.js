@@ -4,6 +4,7 @@ import '../styles/menu.css'
 import {popularMenuFood} from '../assets/fake-data/products'
 import Layout from "../components/Layout/Layout";
 import {Container,Row,Col} from 'reactstrap'
+import { Link } from "react-router-dom";
 import { fastFoodProducts, riceMenuProducts,pizzaProducts,dessertProducts,coffeeProducts} from "../assets/fake-data/products";
 
 const Menu = () => {
@@ -39,8 +40,10 @@ const Menu = () => {
 
                       <h6>{item.title}</h6>
                       <div className="d-flex align-items-center justify-content-between">
-                        <span className="price  align-items-center"> Ugx: <span> {item. price} </span></span>
-                        <span className="shopping_icon"><i class="ri-shopping-cart-line"></i></span>
+                        {/* <span className="price  align-items-center"> Ugx: <span> {item. price} </span></span> */}
+                        {/* <span className="shopping_icon"><i class="ri-shopping-cart-line"></i></span> */}
+                    <Link to = '/Lunch'> <button className='btns main'>View More</button></Link>
+
                       </div>
                       </div>
                   </div>
@@ -53,8 +56,11 @@ const Menu = () => {
           
           <Col lg='12' className='text-center-mb-4'><h3 className="menu_title">Our Menu Details</h3></Col>
           <Col lg='12' className="text-center-mb-4">
+          <button className="filter-btn active_btn">All</button>
+
             <button className="filter-btn">FastFoods</button>
-            <button className="filter-btn active_btn">Rice Food</button>
+
+            <button className="filter-btn ">Rice Food</button>
             <button className="filter-btn">Rice Menu</button>
             <button className="filter-btn">Coffee</button>
             <button className="filter-btn">desert</button>
@@ -80,7 +86,10 @@ const Menu = () => {
                       <h6>{item.title}</h6>
                       <div className="d-flex align-items-center justify-content-between">
                         <span className="price d-flex align-items-center">Ugx: <span>{item.price}</span></span>
-                        <span className="shopping_icon"><i class="ri-shopping-cart-line"></i></span>
+                        {/* <span className="shopping_icon"><i class="ri-shopping-cart-line"></i></span> */}
+                    <Link to = {`/menudetails/${item.id}`}> <button className='btns main'>Add To Cart</button></Link>
+
+                        
                       </div>
                       </div>
                   </div>
@@ -95,26 +104,8 @@ const Menu = () => {
 
 
 
-      {/* <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
-        {MenuList.map((menu) => (
-          <Card sx={{ maxWidth: "390px", display: "flex", m: 2 }}>
-            <CardActionArea>
-              <CardMedia
-                sx={{ minHeight: "400px" }}
-                component={"img"}
-                src={menu.image}
-                alt={menu.name}
-              />
-              <CardContent>
-                <Typography variant="h5" gutterBottom component={"div"}>
-                  {menu.name}
-                </Typography>
-                <Typography variant="body2">{menu.description}</Typography>
-              </CardContent>
-            </CardActionArea>
-          </Card>
-        ))}
-      </Box> */}
+     
+        
       </section>
     </Layout>
   );

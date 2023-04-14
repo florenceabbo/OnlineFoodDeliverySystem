@@ -19,9 +19,13 @@ const Footer = () => (
       </div>
 
       <div className="app__footer-links_logo">
-        <img src='' alt="footer_logo" />
+        {/* <img src='' alt="footer_logo" /> */}
+        <span className="ri">
+          <i class="ri-restaurant-2-line w-50" ></i>
+            </span>{' '}
         <p className="p__opensans">&quot;The best way to find yourself is to lose yourself in the service of others.&quot;</p>
         {/* <img src='' className="spoon__img" style={{ marginTop: 15 }} /> */}
+      
         <div className="app__footer-links_icons">
         <p className='parag'>
           <p>royaldeliveriesUg</p>

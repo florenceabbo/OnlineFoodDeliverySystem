@@ -65,7 +65,7 @@
 .filter-btn{
     border: 1px solid #f76e11;
     padding: 7px 25px;
-    margin-left: 90px;
+    margin-left: 50px;
     background: transparent;
     color: white;
     margin-top: 30px;
@@ -127,6 +127,10 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+}
+
+.btns main{
+    align-items: center;
 }
 .rating{
     margin-bottom: 20px;
